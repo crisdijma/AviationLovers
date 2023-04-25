@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "287679560194",
+    "project_id": "aviationlovers-3039f",
+    "storage_bucket": "aviationlovers-3039f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287679560194:android:7befe79ea94cf294b9451b",
+        "android_client_info": {
+          "package_name": "com.example.aviationlovers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287679560194-nb3i089mhk8278gfihikt557briki2ge.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aviationlovers",
+            "certificate_hash": "fd38e618475d97ebea4beea40ee36739d2e17fbb"
+          }
+        },
+        {
+          "client_id": "287679560194-nr5rbtvble8e53tv9g0hnop142hmhhd5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb7MDjVoq8rIBcf00aKbycUB1wjtlhfpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287679560194-7rcr07gvnauhn8qfrn7b2m265q5ffc09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
