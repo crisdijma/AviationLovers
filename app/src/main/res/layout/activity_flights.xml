@@ -8,18 +8,36 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="200dp"
-        android:layout_height="65dp"
+        android:layout_width="244dp"
+        android:layout_height="57dp"
         android:layout_marginTop="40dp"
+        android:background="@color/blue"
         android:fontFamily="sans-serif-black"
-        android:text="MY FLIGHTS"
-        android:textColor="#102180"
-        android:textSize="34sp"
+        android:text="  MY FLIGHTS   "
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="Add flight"
+        android:hint=""
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintBottom_toTopOf="@+id/BottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/BottomNav"
