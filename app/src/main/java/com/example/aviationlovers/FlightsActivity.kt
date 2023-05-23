@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class FlightsActivity : AppCompatActivity() {
 
@@ -15,6 +16,12 @@ class FlightsActivity : AppCompatActivity() {
 
         val email = intent.getStringExtra("email")
         val displayName = intent.getStringExtra("displayName")
+
+        val addButton = findViewById<FloatingActionButton>(R.id.add_button)
+        addButton.setOnClickListener {
+            val intent = Intent(this, UploadActivity::class.java)
+            startActivity(intent)
+        }
 
         // Set up the bottom navigation menu listener
         val bottomNavigation: BottomNavigationView = findViewById(R.id.BottomNav)
