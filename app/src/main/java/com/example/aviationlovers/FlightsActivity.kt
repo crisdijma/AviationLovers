@@ -58,6 +58,25 @@ class FlightsActivity : AppCompatActivity() {
                     }
                 }
                 adapter.notifyDataSetChanged()
+
+                var totalMiles = 0
+                for (data in dataList) {
+                    val miles = data.dataMiles?.toIntOrNull()
+                    if (miles != null) {
+                        totalMiles += miles
+                    }
+                }
+
+//                binding.totalMilesTextView.text = "Total Miles: $totalMiles"
+
+                binding.shareButton.setOnClickListener {
+                    val milesText = binding.totalMilesTextView.text.toString()
+                    val shareIntent = Intent(Intent.ACTION_SEND)
+                    shareIntent.type = "text/plain"
+                    shareIntent.putExtra(Intent.EXTRA_TEXT, "Am adunat in total $totalMiles mile aviatice")
+                    startActivity(Intent.createChooser(shareIntent, "Share Miles"))
+                }
+
                 dialog.dismiss()
             }
             override fun onCancelled(error: DatabaseError) {

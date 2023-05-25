@@ -85,6 +85,31 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4"
             app:layout_constraintVertical_bias="1.0" />
 
+        <TextView
+            android:id="@+id/totalMilesTextView"
+            android:layout_width="335dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="616dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share"
+            android:contentDescription="Button share"
+            app:layout_constraintBottom_toTopOf="@+id/BottomNav"
+            app:layout_constraintEnd_toStartOf="@+id/add_button"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/totalMilesTextView"
+            app:layout_constraintVertical_bias="0.354" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
